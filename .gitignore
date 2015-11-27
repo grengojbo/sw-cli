@@ -2,6 +2,8 @@
 *.o
 *.a
 *.so
+*.orig
+*.log
 
 # Folders
 _obj
@@ -22,3 +24,15 @@ _testmain.go
 *.exe
 *.test
 *.prof
+sw-cli
+
+config/config*yml
+public/system
+
+.editorconfig
+deploy.sh
+db/seeds/enterprise
+db/seeds/main
+harp.json
+.harp
+tmp/*
