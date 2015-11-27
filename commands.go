@@ -137,9 +137,9 @@ func runPing(c *cli.Context) {
 			// Unexpected result on login
 			// fmt.Printf("Error: %v\n", err.Error())
 			if code == 1 {
-				fmt.Printf("Error no ping: %s [ %s ] %s\n", h.Name, h.Ip, h.Adress)
+				fmt.Printf("%v) Error no ping: %s [ %s ] %s\n", i+1, h.Name, h.Ip, h.Adress)
 			} else if code == 2 {
-				fmt.Printf("Error no connect: %s [ %s ] %s\n", h.Name, h.Ip, h.Adress)
+				fmt.Printf("%v) Error no connect: %s [ %s ] %s\n", i+1, h.Name, h.Ip, h.Adress)
 			}
 		}
 		if m.Verbose && code == 200 {
